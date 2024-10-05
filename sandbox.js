@@ -61,3 +61,14 @@ ninja2 = {
     age: 20,
     belt: "black",
 };
+// dynamic types
+var age1 = 25;
+age1 = "hello";
+console.log(age1);
+age1 = { name: "luigi" };
+console.log(age1);
+var mixed2 = [];
+mixed2.push(2);
+mixed2.push("Hello");
+mixed2.push(true);
+console.log(mixed2);

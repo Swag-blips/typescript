@@ -93,3 +93,17 @@ ninja2 = {
   age: 20,
   belt: "black",
 };
+
+// dynamic types
+let age1: any = 25;
+age1 = "hello";
+console.log(age1);
+age1 = { name: "luigi" };
+console.log(age1);
+
+let mixed2: any[] = [];
+mixed2.push(2);
+mixed2.push("Hello");
+mixed2.push(true);
+
+console.log(mixed2);
