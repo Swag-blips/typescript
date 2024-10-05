@@ -1,4 +1,4 @@
-"use strict";
+import { Invoice } from "./class.js";
 // functions
 // let greet: Function;
 // greet = () => {
@@ -31,3 +31,10 @@ calc = (num1, num2, action) => {
         return num1 - num2;
     }
 };
+//
+const invOne = new Invoice("ben", "sold balls", 20);
+const invTwo = new Invoice("mario", "sold bas", 2032);
+console.log(invOne, invTwo);
+let invoices = [];
+invoices.push(invOne, invTwo);
+invoices.forEach((inv) => console.log(inv.client, inv.amount, inv.format()));

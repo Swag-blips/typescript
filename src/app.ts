@@ -1,3 +1,5 @@
+import { Invoice } from "./class.js";
+
 // functions
 
 // let greet: Function;
@@ -44,6 +46,20 @@ calc = (num1: number, num2: number, action: string) => {
   if (action === "add") {
     return num1 + num2;
   } else {
-    return num1 - num2; 
+    return num1 - num2;
   }
 };
+
+//
+
+const invOne = new Invoice("ben", "sold balls", 20);
+
+const invTwo = new Invoice("mario", "sold bas", 2032);
+
+console.log(invOne, invTwo);
+
+let invoices: Invoice[] = [];
+invoices.push(invOne, invTwo);
+
+invoices.forEach((inv) => console.log(inv.client, inv.amount, inv.format()));
+
