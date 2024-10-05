@@ -1,3 +1,5 @@
+// primitives
+
 let character = "mario";
 let age = 30;
 let isBlackBelt = false;
@@ -43,4 +45,51 @@ ninja = {
   name: "yoshi",
   belt: "orange",
   age: 40,
+};
+
+// explicit types
+
+// explicit primitives
+let character1: string;
+let age2: number;
+let isLogged3: boolean;
+
+age = 30;
+isLogged3 = true;
+
+//explicity arrays
+
+let ninjas: string[] = [];
+
+ninjas.push("hello");
+
+// union types
+let mixed1: (string | number | boolean)[] = [];
+mixed1.push("hello");
+mixed1.push(20);
+mixed1.push(false);
+console.log(mixed);
+
+let uid: string | number;
+uid = 123;
+
+// objects
+
+let ninja1: object;
+
+ninja1 = {
+  name: "Hello",
+  age: 30,
+};
+
+let ninja2: {
+  name: string;
+  age: number;
+  belt: string;
+};
+
+ninja2 = {
+  name: "mario",
+  age: 20,
+  belt: "black",
 };
