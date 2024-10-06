@@ -1,5 +1,14 @@
 import { Invoice } from "./class.js";
+import { Payment } from "./Payments.js";
+import { HasFormatter } from "./HasFormatter.js";
 
+let docOne: HasFormatter;
+let docTwo: HasFormatter;
+
+docOne = new Invoice("yoshi", "web work", 250);
+docTwo = new Payment("mario", "plumbing", 250);
+
+let docs: HasFormatter[] = [];
 // functions
 
 // let greet: Function;
@@ -62,4 +71,3 @@ let invoices: Invoice[] = [];
 invoices.push(invOne, invTwo);
 
 invoices.forEach((inv) => console.log(inv.client, inv.amount, inv.format()));
-

@@ -1,4 +1,10 @@
 import { Invoice } from "./class.js";
+import { Payment } from "./Payments.js";
+let docOne;
+let docTwo;
+docOne = new Invoice("yoshi", "web work", 250);
+docTwo = new Payment("mario", "plumbing", 250);
+let docs = [];
 // functions
 // let greet: Function;
 // greet = () => {
