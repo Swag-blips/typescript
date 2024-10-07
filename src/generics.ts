@@ -6,3 +6,6 @@ const addUID = <T extends object>(obj: T) => {
 };
 
 let docOne = addUID({ name: "yoshi", age: 40 });
+
+
+// ENUMS
